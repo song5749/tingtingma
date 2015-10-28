@@ -11,6 +11,7 @@
   <name>tingtingma_service</name>
   <url>http://maven.apache.org</url>
    <build>
+   
 		<pluginManagement>
 			<plugins>
 				<plugin>

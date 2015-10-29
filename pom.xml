@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.tingtingma</groupId>
@@ -27,9 +28,9 @@
 	<modules>
 		<module>tingtingma_common</module>
 		<module>tingtingma_dao</module>
-		 <module>tingtingma_service</module>
+		<module>tingtingma_service</module>
 		<module>tingtingma_web</module>
-  </modules>
+	</modules>
 	<build>
 		<plugins>
 			<plugin>
@@ -119,7 +120,7 @@
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
-				<version>4.0</version>
+				<version>4.4</version>
 				<scope>test</scope>
 			</dependency>
 			<dependency>
@@ -211,8 +212,24 @@
 				<artifactId>commons-codec</artifactId>
 				<version>1.10</version>
 			</dependency>
-			
-			
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpclient</artifactId>
+				<version>4.5.1</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>1.2.7</version>
+			</dependency>
+
+
+
+			<!-- <dependency> <groupId>log4j</groupId> <artifactId>log4j</artifactId> 
+				<version>${log4j.version}</version> </dependency> <dependency> <groupId>org.slf4j</groupId> 
+				<artifactId>slf4j-api</artifactId> <version>${slf4j.version}</version> </dependency> 
+				<dependency> <groupId>org.slf4j</groupId> <artifactId>slf4j-log4j12</artifactId> 
+				<version>${slf4j.version}</version> </dependency> -->
 		</dependencies>
 	</dependencyManagement>
 
